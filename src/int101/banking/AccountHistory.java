@@ -1,7 +1,7 @@
 package int101.banking;
 
 public class AccountHistory {
-    private AccountTransaction history[];
+    private final AccountTransaction history[];
     private int count;
 
     public AccountHistory(int size) {
@@ -17,8 +17,12 @@ public class AccountHistory {
     }
     
     @Override
-    public String toString() {
-        // ToDo: show all transaction hisotry
-        return "";
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0;i < count; i++){
+            sb.append(history[i].toString()).append("\n\t");
+            }    
+        return sb.toString();
     }
+
 }

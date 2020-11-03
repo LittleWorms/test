@@ -1,6 +1,10 @@
 
+import int101.banking.AccountHistory;
+import int101.banking.AccountTransaction;
 import int101.banking.BankAccount;
+import int101.banking.TransactionType;
 import int101.base.Person;
+import java.math.BigDecimal;
 
 public class Testing {
 
@@ -8,7 +12,7 @@ public class Testing {
         testPerson();
         testBankAccount();
     }
-
+    
     private static void testPerson() {
         Person p0 = new Person("Alan","Turing");
         Person p1 = new Person("Alonzo","Chruch");
