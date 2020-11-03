@@ -7,7 +7,6 @@ public class Testing {
     public static void main(String[] args) {
         testPerson();
         testBankAccount();
-        
     }
 
     private static void testPerson() {
